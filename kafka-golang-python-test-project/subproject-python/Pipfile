@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+confluent-kafka = "*"
+
+[dev-packages]
+pylint = "*"
+autopep8 = "*"
+snakeviz = "*"
+pipenv = "*"
+mypy = "*"
+ipdb = "*"
+debugpy = "*"
+
+[requires]
+python_version = "3.11"
