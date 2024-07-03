@@ -1,0 +1,31 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+numpy = "*"
+scipy = "*"
+pandas = "*"
+ipython = "*"
+seaborn = "*"
+sympy = "*"
+jupyterlab = "*"
+jupyterlab-spellchecker = "*"
+matplotlib = "*"
+beautifulsoup4 = "*"
+requests = "*"
+mlflow = "*"
+scikit-learn = "*"
+
+[dev-packages]
+pylint = "*"
+autopep8 = "*"
+snakeviz = "*"
+pipenv = "*"
+mypy = "*"
+ipdb = "*"
+debugpy = "*"
+
+[requires]
+python_version = "3.11"

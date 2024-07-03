@@ -1,0 +1,7 @@
+# ignore everything
+**
+
+# except the following
+!.gitignore
+!docker-compose.yaml
+!**/.keep

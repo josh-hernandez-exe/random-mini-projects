@@ -1,0 +1,14 @@
+services:
+  jupyterlab:
+    image: etl-project/jupyterlab
+    build:
+      context: ./jupyterlab
+      dockerfile: ./python.Dockerfile # relative to context
+    command: pipenv run python -m jupyterlab --port 8888 --ip 0.0.0.0
+    ports:
+      - 8888:8888
+  python-shell:
+    depends_on:
+      - jupyterlab
+    image: etl-project/jupyterlab
+    command: pipenv run python scripts/test_file.py
